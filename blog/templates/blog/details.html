@@ -1,0 +1,15 @@
+{% extends 'skills/base.html' %}
+{% block content %}
+ <script>
+    $(document).ready(function() {
+        $("h1").css("transform", "translateY(0)")
+        $("h5").addClass("animated-opacity");
+    });
+  </script>
+
+<div class="detail">
+    <h1 style="transform: translateY(-100%); transition: transform ease-in-out 0.7s;" class="h1font"> <span class="flower">&#10031;</span> {{ blog.title }} <span class="flower">&#10031;</span></h1>
+    <h5> <span class="flower">--</span>  {{ blog.date | date:'j E Y'  }} <span class="flower">--</span></h5>
+    <p>{{ blog.description | safe }}</p>
+</div>
+{%  endblock  %}

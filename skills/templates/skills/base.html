@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="icon" href="{% static 'skills/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+<div class="menu">
+    <div class="wrap">
+        <div class="logo">
+            <a class="logo-menu" href="{% url 'index' %}"><img src="{% static 'skills/logo.png' %}" alt=""> </a>
+        </div>
+        <ul style="transform: translateX(100%); transition: transform  1s;">
+            <li> <a class="main-menu" href="{% url 'index' %}"><span class="flower">&#9883;</span> HOME <span class="flower">&#9883;</span></a></li>
+            <li><a class="main-menu"  href="{% url 'blogs' %}"><span class="flower">&#9883;</span> BLOG <span class="flower">&#9883;</span> </a></li>
+            <li><a class="main-menu" href="{% static 'skills/resume.pdf' %}" target="_blank"><span class="flower">&#9883;</span> RESUME <span class="flower">&#9883;</span></a></li>
+        </ul>
+    </div>
+</div>
+  <div class="container">
+      <div class="wrap">
+        {% block content %}
+
+        {% endblock %}
+      </div>
+  </div>
+  <script>
+    $(document).ready(function() {
+        $("body").addClass("loaded");
+        $("ul").css("transform", "translateX(0)")
+    });
+  </script>
+</body>
+</html>
