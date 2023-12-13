@@ -6,6 +6,7 @@ body{
     margin: 0;
     transition: opacity 0.4s ease-in-out;
     opacity: 0;
+    zoom: 0.9;
 }
 
 body.loaded {
@@ -180,7 +181,7 @@ h3{
 .menu{
     background: rgba(209, 195, 236, 0.35);
     padding: 10px;
-    border-bottom: 5px solid rgba(85, 154, 80, 0.19);
+    border-bottom: 5px solid rgba(183, 112, 218, 0.29);
     border-radius: 11px;
 }
 
@@ -244,7 +245,7 @@ h3{
 }
 
  h5{
-    color: rgba(93, 76, 101, 0.44);
+    color: rgba(93, 76, 101, 0.25);
     padding-left: 15px;
      font-size: 1.3rem;
      font-family: 'Rubik Moonrocks', serif;
