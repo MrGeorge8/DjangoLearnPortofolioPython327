@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Black+Ops+One&family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Bubbles&family=Rubik+Moonrocks&display=swap');
 
 body{
+    background-color: rgb(228, 231, 240);
     padding: 0;
     margin: 0;
     font-family: Georgia, serif;
@@ -66,8 +67,6 @@ ul{
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
 
-
-
 .content .wrap{
     display: flex;
     flex-direction: column;
@@ -81,9 +80,16 @@ h1, h2{
 }
 
 .btn{
-    background: #c6acf3;
+    background: rgba(195, 234, 192, 0.63);
     color: white;
     border-radius: 11px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: background-color ease-in-out 0.3s;
+}
+
+.btn:hover{
+    background-color: rgba(150, 234, 144, 0.88);
 }
 
 button{
@@ -107,9 +113,10 @@ input{
 }
 
 .bg{
-    box-shadow: 0 2px 12px 2px cornflowerblue;
-    padding: 40px;
+    box-shadow: 0 2px 12px 2px #c6acf3;
+    padding: 100px;
     border-radius: 6px;
+    background-color: rgba(67, 106, 189, 0.16);
 }
 
 .top{
@@ -123,8 +130,6 @@ input{
 }
 
 .content li {
-    box-shadow: 0 2px 8px 2px rgba(149, 99, 248, 0.37);
-    background-color: rgba(67, 106, 189, 0.27);
     margin-bottom: 20px;
     font-size: 20px;
 }
@@ -141,13 +146,49 @@ label {
 }
 
 .btn_good{
-    margin-right: 120px;
+    margin-right: 165px;
     display: block;
-    background-color: #c6acf3;
+    background-color: rgba(192, 226, 234, 0.66);
     color: white;
     border-radius: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color ease-in-out 0.3s;
+}
+
+.btn_good:hover{
+    background-color: rgba(135, 219, 239, 0.89);
 }
 
 h1{
-     font-family: 'Rubik Moonrocks', serif;
+     font-family: 'Rubik Bubbles', serif;
+     font-size: 37px;
+}
+
+label{
+  color: rgba(19, 2, 51, 0.47);
+     font-size: 1.3rem;
+     font-family: 'Roboto Condensed', sans-serif;
+     letter-spacing: 1px;
+     font-weight: bold;
+}
+
+label, #id_username{
+    border-radius: 11px;
+}
+
+label, #id_password{
+    border-radius: 11px;
+}
+
+label, #id_password1{
+    border-radius: 11px;
+}
+
+label, #id_password2{
+    border-radius: 11px;
+}
+
+.flower{
+    color: rgba(85, 154, 80, 0.35);
 }

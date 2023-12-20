@@ -2,11 +2,11 @@
 
 {% block content %}
 
-<h1>Регистрация:</h1>
+<h1><span class="flower">&#11015</span>Registration <span class="flower">&#11015</span></h1>
 <h2>{{ error }}</h2>
 <form method="post" class="register">
     {% csrf_token %}
     {{ form.as_p }}
-    <button class="btn">Зарегестрироваться</button>
+    <button class="btn">Register</button>
 </form>
 {% endblock %}

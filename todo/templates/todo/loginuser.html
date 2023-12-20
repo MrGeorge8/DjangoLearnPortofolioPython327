@@ -2,14 +2,14 @@
 
 {% block content %}
 
-<h1>Авторизация</h1>
+<h1><span class="flower">&#11015</span> Authorization <span class="flower">&#11015</span></h1>
 <h2>{{ error }}</h2>
 
 <form method="post" class="bg">
     {% csrf_token %}
     {{ form.as_p }}
     <div class="center">
-        <button class="btn">Авторизация</button>
+        <button class="btn">Authorize</button>
     </div>
 </form>
 

@@ -11,10 +11,10 @@
     <div class="wrap">
     {% if user.is_authenticated %}
         <ul>
-            <li class="logo">Пользователь: {{ user.username }}</li>
-            <li> <a href="{% url 'createtodos' %}">Create</a> </li>
-            <li> <a href="{% url 'currenttodos' %}">Topical</a> </li>
-            <li> <a href="{% url 'completed' %}">Executed</a> </li>
+            <li class="logo">USER: {{ user.username }}</li>
+            <li> <a href="{% url 'createtodos' %}">CREATE</a> </li>
+            <li> <a href="{% url 'currenttodos' %}">TOPICAL</a> </li>
+            <li> <a href="{% url 'completed' %}">EXECUTED</a> </li>
             <li><form action="{% url 'logoutuser' %}" method="post">
                 {% csrf_token %}
                 <button class="top">Exit</button>
@@ -25,9 +25,9 @@
 
     {% else %}
         <ul>
-            <li><a href="{% url 'signupuser' %}">Registration</a> </li>
-             <li><a href="{% url 'loginuser' %}">Sign In</a> </li>
-            <li><a class="main-menu" href="{% url 'index' %}">Back</a></li>
+            <li><a href="{% url 'signupuser' %}">REGISTRATION</a> </li>
+             <li><a href="{% url 'loginuser' %}">SIGN IN</a> </li>
+            <li><a class="main-menu" href="{% url 'index' %}">BACK <span class="flower">&#10144;</span></a></li>
         </ul>
 
     {% endif %}
