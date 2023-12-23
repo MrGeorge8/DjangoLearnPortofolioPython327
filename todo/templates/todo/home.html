@@ -25,9 +25,9 @@
 
     {% else %}
         <ul>
-            <li><a href="{% url 'signupuser' %}">REGISTRATION</a> </li>
-             <li><a href="{% url 'loginuser' %}">SIGN IN</a> </li>
-            <li><a class="main-menu" href="{% url 'index' %}">BACK <span class="flower">&#10144;</span></a></li>
+            <li><a class="main-menu" href="{% url 'signupuser' %}">REGISTRATION</a> </li>
+             <li><a class="main-menu" href="{% url 'loginuser' %}">SIGN IN</a> </li>
+            <li><a class="main-back" href="{% url 'index' %}">&#8617;</a></li>
         </ul>
 
     {% endif %}
