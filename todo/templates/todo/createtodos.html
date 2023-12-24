@@ -2,9 +2,16 @@
 
 {% block content %}
 
-<h1><span class="flower">&#10047;</span> Create a task <span class="flower">&#10047;</span></h1>
+<script>
+    $(document).ready(function() {
+        $("h1").css("transform", "translateY(0)");
+        $(".bg").css("transform", "scale(1)");
+    });
+</script>
+
+<h1 style="transform:translateY(-100%); transition: ease-in-out 1s"> <span class="flower">&#11015</span> Create a task <span class="flower">&#11015</span></h1>
 <h2>{{ error }}</h2>
-<form method="post" class="bg">
+<form style="transform:scale(1.4); transition: ease-in-out 1s" method="post" class="bg">
     {% csrf_token %}
     {{ form.as_p }}
     <div class="center">

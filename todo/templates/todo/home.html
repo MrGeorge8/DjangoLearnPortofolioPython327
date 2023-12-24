@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="{% static 'css/td_style.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
 <div class="menu">
     <div class="wrap">
     {% if user.is_authenticated %}
         <ul>
-            <li class="logo">USER: {{ user.username }}</li>
+            <li  class="logo">USER: {{ user.username }}</li>
             <li> <a class="main-menu" href="{% url 'createtodos' %}"><span class="flower">&#10047;</span>CREATE<span class="flower"> &#10047;</span></a></li>
             <li> <a class="main-menu" href="{% url 'currenttodos' %}"><span class="flower">&#10047;</span>TOPICAL<span class="flower">&#10047;</span></a></li>
             <li> <a class="main-menu" href="{% url 'completed' %}"><span class="flower">&#10047;</span>EXECUTED<span class="flower">&#10047;</span> </a></li>
@@ -25,8 +26,8 @@
 
     {% else %}
         <ul>
-            <li><a class="main-menu" href="{% url 'signupuser' %}"><span class="flower">&#10047;</span> REGISTRATION <span class="flower">&#10047;</span></a></li>
-             <li><a class="main-menu" href="{% url 'loginuser' %}"><span class="flower">&#10047;</span> SIGN IN <span class="flower">&#10047;</span></a></li>
+            <li> <a class="main-menu" href="{% url 'signupuser' %}"><span class="flower">&#10047;</span> REGISTRATION <span class="flower">&#10047;</span></a></li>
+             <li> <a class="main-menu" href="{% url 'loginuser' %}"><span class="flower">&#10047;</span> SIGN IN <span class="flower">&#10047;</span></a></li>
             <li><a class="main-back" href="{% url 'index' %}">&#8617;</a></li>
         </ul>
 
@@ -36,9 +37,15 @@
 <div class="content">
   <div class="wrap">
     {% block content %}
-   <h1>Hello</h1>
+
     {% endblock %}
   </div>
 </div>
+<script>
+    $(document).ready(function() {
+        $("body").addClass("loaded");
+        $("li").css("transform", "scale(1)", "translateX(0)");
+    });
+</script>
 </body>
 </html>

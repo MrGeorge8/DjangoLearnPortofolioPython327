@@ -2,8 +2,15 @@
 
 {% block content %}
 
-<h1><span class="flower">&#11015</span>  Executed Tasks <span class="flower">&#11015</span></h1>
-<ul>
+<script>
+    $(document).ready(function() {
+        $("h1").css("transform", "translateY(0)");
+        $("ul").css("transform", "translateY(0)");
+    });
+</script>
+
+<h1 style="transform:translateY(-100%); transition: ease-in-out 1s"> <span class="flower">&#11015</span>  Executed Tasks <span class="flower">&#11015</span></h1>
+<ul style="transform:translateY(100%); transition: ease-in-out 1s">
     {% for todo in todos  %}
     <li>
         <a href="#">

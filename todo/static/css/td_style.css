@@ -6,6 +6,12 @@ body{
     margin: 0;
     font-family: Georgia, serif;
     zoom: 0.9;
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
+}
+
+body.loaded {
+    opacity: 1;
 }
 
 .wrap{
@@ -40,7 +46,7 @@ ul{
 
 .menu .logo{
     margin-right: 7%;
-    color: rgba(106, 116, 211, 0.85);
+    color: rgba(123, 131, 209, 0.85);
     padding: 7px;
     font-size: 1.7em;
     border-radius: 11px;
@@ -96,7 +102,7 @@ ul{
 }
 
 h1, h2{
-    color: #8f95d3;
+    color: rgba(143, 149, 211, 0.75);
 }
 
 .btn{
@@ -143,7 +149,7 @@ input{
 .top{
     padding: 11px 20px;
     margin-top: 0;
-    color: #6a74d3;
+    color: rgba(115, 125, 215, 0.94);
     white-space: nowrap;
     background-color: #e4e7f0;
     font-family: 'Rubik Bubbles', serif;
@@ -197,7 +203,7 @@ label {
 }
 
 h1{
-     font-family: 'Rubik Bubbles', serif;
+     font-family: 'Rubik Moonrocks', serif;
      font-size: 37px;
 }
 
