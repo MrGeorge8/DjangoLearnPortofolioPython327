@@ -12,12 +12,12 @@
     {% if user.is_authenticated %}
         <ul>
             <li class="logo">USER: {{ user.username }}</li>
-            <li> <a href="{% url 'createtodos' %}">CREATE</a> </li>
-            <li> <a href="{% url 'currenttodos' %}">TOPICAL</a> </li>
-            <li> <a href="{% url 'completed' %}">EXECUTED</a> </li>
+            <li> <a class="main-menu" href="{% url 'createtodos' %}"><span class="flower">&#10047;</span>CREATE<span class="flower"> &#10047;</span></a></li>
+            <li> <a class="main-menu" href="{% url 'currenttodos' %}"><span class="flower">&#10047;</span>TOPICAL<span class="flower">&#10047;</span></a></li>
+            <li> <a class="main-menu" href="{% url 'completed' %}"><span class="flower">&#10047;</span>EXECUTED<span class="flower">&#10047;</span> </a></li>
             <li><form action="{% url 'logoutuser' %}" method="post">
                 {% csrf_token %}
-                <button class="top">Exit</button>
+                <button class="top">Exit &#10144;</button>
                 </form>
             </li>
 
@@ -36,7 +36,7 @@
 <div class="content">
   <div class="wrap">
     {% block content %}
-
+   <h1>Hello</h1>
     {% endblock %}
   </div>
 </div>

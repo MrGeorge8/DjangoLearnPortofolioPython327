@@ -12,7 +12,6 @@
 <form action="{% url 'completetodo' todo.id %}" method="POST">
     {% csrf_token %}
     <button class="btn_good">Done</button>
-
 </form>
 
 {% endblock %}
