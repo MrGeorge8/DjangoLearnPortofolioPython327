@@ -25,7 +25,7 @@ body.loaded {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 60px;
-    gap:40px ;
+    gap:40px;
 }
 
 .text{
@@ -255,12 +255,11 @@ h3{
 .logo img{
     opacity: 0.8;
     border-radius: 11px;
-    transition: opacity ease-in-out 0.4s, background-color ease-in-out 0.4s;
+    transition: opacity ease-in-out 0.4s;
 }
 
 .logo img:hover{
-    opacity: 1;
-    background-color: rgba(163, 112, 218, 0.47);
+    opacity: 1.4;
 }
 
 .textio p {
@@ -298,32 +297,32 @@ h3{
 }
 
 .shape {
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     background-color: rgba(183, 112, 218, 0.67);
-    margin-right: 380px;
-    border-radius: 11px;
+    margin-right: 376px;
+    border-radius: 30px;
     transition: background-color 2.2s ease;
     animation: colorChange 3s infinite alternate ease-in-out;
 }
 
 @keyframes colorChange {
     0%, 100% {
-        background-color: rgba(85, 154, 80, 0.35);
+        background-color: rgba(75, 171, 48, 0.34);
     }
     16.666% {
-        background-color: rgba(85, 154, 80, 0.35);
+        background-color: rgba(75, 171, 48, 0.35);
     }
     33.333% {
-        background-color: rgba(85, 154, 80, 0.35);
+        background-color: rgba(75, 171, 48, 0.32);
     }
     50% {
-        background-color: rgba(85, 154, 80, 0.35);
+        background-color: rgba(75, 171, 48, 0.32);
     }
     66.666% {
-        background-color: rgba(85, 154, 80, 0.35);
+        background-color: rgba(70, 164, 44, 0.29);
     }
     83.333% {
-        background-color: rgba(85, 154, 80, 0.35);
+        background-color: rgba(75, 171, 48, 0.33);
     }
 }
